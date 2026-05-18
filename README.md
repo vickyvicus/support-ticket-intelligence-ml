@@ -50,3 +50,21 @@ The models were evaluated using accuracy, macro F1-score, classification report,
 
 ### Key Learning
 Random Forest generally performed better than a single Decision Tree because it combines multiple trees and reduces overfitting.
+
+
+## Module 2: Escalation Risk Prediction
+
+### Goal
+Predict whether a support ticket is likely to be escalated.
+
+### Model
+Logistic Regression was used because escalation prediction is a binary classification problem.
+
+### Target
+The `is_escalated` label was synthetically generated using business-inspired rules based on customer tier, affected users, previous ticket count, urgent/error keywords, and ticket channel.
+
+### Evaluation
+The model was evaluated using precision, recall, F1-score, ROC-AUC, confusion matrix, and threshold tuning.
+
+### Key Learning
+For escalation prediction, recall is often more important than accuracy because missing a truly escalated ticket can delay urgent customer issues.
