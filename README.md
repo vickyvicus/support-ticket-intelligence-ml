@@ -68,3 +68,21 @@ The model was evaluated using precision, recall, F1-score, ROC-AUC, confusion ma
 
 ### Key Learning
 For escalation prediction, recall is often more important than accuracy because missing a truly escalated ticket can delay urgent customer issues.
+
+
+## Module 3: Resolution Time Prediction
+
+### Goal
+Predict the estimated time required to resolve a support ticket.
+
+### Model
+Linear Regression was used as the primary model to revise regression fundamentals. Ridge Regression and Random Forest Regressor were used for comparison.
+
+### Target
+The `resolution_time_hours` target was synthetically generated using business-inspired factors such as customer tier, affected users, previous ticket count, ticket channel, issue keywords, and escalation status.
+
+### Evaluation
+The model was evaluated using MAE, RMSE, R² score, actual vs predicted plot, and residual analysis.
+
+### Key Learning
+MAE is easier to explain to business users because it directly represents average prediction error in hours.
