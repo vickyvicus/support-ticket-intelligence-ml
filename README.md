@@ -86,3 +86,18 @@ The model was evaluated using MAE, RMSE, R² score, actual vs predicted plot, an
 
 ### Key Learning
 MAE is easier to explain to business users because it directly represents average prediction error in hours.
+
+
+## Module 4: Ticket Clustering
+
+### Goal
+Group similar support tickets without using labeled data.
+
+### Approach
+Ticket text was converted into TF-IDF vectors and clustered using K-Means.
+
+### Evaluation
+Since this is unsupervised learning, the clusters were evaluated using silhouette score, cluster size distribution, top keywords per cluster, and manual inspection of sample tickets.
+
+### Key Learning
+Unsupervised learning does not give direct accuracy. The quality of clusters is judged by interpretability and business usefulness.
