@@ -16,6 +16,7 @@ Goal: Predict support ticket priority using Decision Tree and Random Forest mode
 - Pandas
 - NumPy
 - scikit-learn
+- TensorFlow/Keras
 - Matplotlib
 - Jupyter
 - FastAPI later
@@ -101,3 +102,23 @@ Since this is unsupervised learning, the clusters were evaluated using silhouett
 
 ### Key Learning
 Unsupervised learning does not give direct accuracy. The quality of clusters is judged by interpretability and business usefulness.
+
+
+## Module 5: Neural Network Classification
+
+### Goal
+Predict ticket priority or escalation risk using deep learning with TensorFlow/Keras.
+
+### Model
+A multi-layer neural network (MLP) built with TensorFlow/Keras using dense layers with ReLU activation and regularization techniques.
+
+### Features
+- TF-IDF vectorized text features with dimensionality reduction (TruncatedSVD)
+- Standardized numerical features
+- Combined text and structured ticket metadata
+
+### Evaluation
+The model was evaluated using accuracy, precision, recall, F1-score, ROC-AUC, classification report, confusion matrix, and ROC curves.
+
+### Key Learning
+Neural networks can capture complex non-linear patterns in text and structured data but require careful tuning of architecture, regularization, and feature preprocessing to avoid overfitting.
